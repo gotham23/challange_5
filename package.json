@@ -1,0 +1,24 @@
+{
+  "name": "challange-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gotham23/challange_5.git"
+  },
+  "author": "kelompok 5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gotham23/challange_5/issues"
+  },
+  "homepage": "https://github.com/gotham23/challange_5#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "sequelize": "^6.23.2"
+  }
+}
