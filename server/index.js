@@ -26,6 +26,7 @@
 // });
 const express = require('express');
 const app = express();
+// const { mobil } = require('./models');
 
 // Ambil port dari environment variable
 // Dengan nilai default 8000

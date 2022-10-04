@@ -1,286 +1,231 @@
+:root {
+  --bg-primary: #0d28a6;
+  --bg-grey: #cfd4ed;
+  --bg-success: #5cb85f;
+}
+
 body {
-  font-family: Helvetica;
-  margin: 0;
-  padding: 0;
+  font-family: 'IBMPlexSans-Regular', sans-serif;
+  background-color: #f4f5f7;
 }
 
-.jumbotron button {
-  background-color: #5cb85f;
-  color: white;
+/* .main-menu {
+} */
+
+.fixed-menu {
+  max-width: 70px !important;
+  width: inherit;
+  background-color: var(--bg-primary);
+}
+
+.fixed-menu .logo {
+  width: 34px;
+  height: 34px;
+  background-color: var(--bg-grey);
+}
+
+.menu-wrap div:nth-child(2) {
+  background: #ffffff4d;
+}
+
+.menu p {
+  font-family: 'IBMPlexSans-Regular', sans-serif;
+}
+
+.sidebar {
+  width: 220px !important;
+  height: 100vh;
+}
+
+.fixed-sidebar {
+  padding-top: 80px;
+  background: #fff;
+}
+
+.sidebar p,
+.sidebar a {
+  font-family: 'IBMPlexSans-Regular';
+  font-size: 14px;
+  line-height: 20px;
+  color: #8a8a8a;
+}
+
+.sidebar p:last-child,
+.sidebar a:last-child {
+  color: #151515;
+  background-color: var(--bg-grey);
+}
+
+.navbar {
+  width: 95%;
+  z-index: 100;
+}
+
+.navbar .nav-logo {
+  width: 100px;
+  height: 34px;
+  background-color: var(--bg-grey);
+}
+
+.form-control::placeholder {
+  color: #8a8a8a;
+  font-family: 'IBMPlexSans-Light';
+}
+
+.btn-outline-primary {
+  border-color: var(--bg-primary);
+  color: var(--bg-primary);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--bg-primary);
+}
+
+.rigth-wrap {
+  overflow-x: hidden;
+  width: 94%;
+  margin-left: 70px;
+}
+
+.user-icon {
+  background-color: var(--bg-grey);
+}
+
+.user-wrap p {
+  font-family: 'IBMPlexSans-Light';
+}
+
+.fi-menu {
+  margin-left: 120px;
+}
+
+.breadcrumb img {
+  width: 4px;
+  height: 8px;
+}
+
+.breadcrumb .active {
+  color: #222222;
+  font-family: 'IBMPlexSans-Light';
+}
+
+.main {
+  padding: 100px 25px !important;
+}
+
+.main .btn-primary {
+  height: 36px;
+  background-color: var(--bg-primary);
+  font-family: 'IBMPlexSans-Medium';
+}
+
+.main .btn-outline-primary {
+  outline: var(--bg-primary);
+}
+
+.filter .btn-outline-secondary {
+  background-color: #fff;
+  border: 1px solid #aeb7e1;
+  color: #aeb7e1;
+}
+
+.filter .active {
+  background-color: var(--bg-grey);
+  color: var(--bg-primary);
+}
+
+.cars-container .container {
+  max-width: 1047px;
+}
+
+.cars-container .card {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 31px 17px;
   border: none;
-}
-/* Dropdown Button */
-.dropbtn {
-  background-color: #04aa6d;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+  /* height: 530px; */
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-
-.jumbotron img {
-  margin-left: 2px;
+.cars-container .card > img {
+  margin: 0 auto;
+  padding: 17px;
   width: 100%;
-}
-.jumbotron h1 {
-  font-weight: bold;
+  height: 240px;
 }
 
-.our h3 {
-  font-weight: bold;
+.cars-container .card-title {
+  font-family: 'IBMPlexSans-Regular';
 }
 
-.why img {
-  width: 30px;
-  height: 30px;
-  margin-left: 2rem;
-  margin-top: 2rem;
-  content: icon;
+.cars-container .clock span {
+  font-family: 'IBMPlexSans-Light';
 }
-.testimonial-img {
-  width: 80px;
-  height: 80px;
+
+.form-card {
+  background-color: #fff;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
 }
-.testimonial-rating {
-  max-height: 16px;
+
+.form-card .form-label {
+  color: #3c3c3c;
 }
-.testimonial-name {
-  font-weight: bold;
+
+.form-card .form-label,
+.form-card .form-control::placeholder,
+.form-card select,
+.form-card .form-text,
+.form-card .form-control {
+  font-family: 'IBMPlexSans-Light';
+  color: #8a8a8a;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.form-card .form-label span {
+  color: #ff0000;
+}
+
+.form-card .form-control,
+.form-card select {
+  color: #151515 !important;
+  width: 339px;
+}
+
+form .btn-wrap a {
+  width: 69px;
+  height: 36px;
+}
+
+form > .row {
+  margin-top: 100px;
+}
+
+.btn-success {
+  background-color: var(--bg-success);
+}
+
+.btn-outline-success {
+  border: 1px solid var(--bg-success);
+}
+
+.fs-12 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.fs-14 {
   font-size: 14px;
-  text-decoration: none;
-  color: black;
-  line-height: 0px;
-}
-.testimonial-media {
-  margin-top: 20px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #f1f3ff;
-  color: black;
-  border-radius: 50%;
-  border: solid;
-}
-.testimonial-media:hover {
-  background-color: #04aa6d;
-  color: white;
+  line-height: 20px;
 }
 
-.getting {
-  color: white;
-  border-radius: 60px;
+.fs-16 {
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.getting a {
-  background-color: #5cb85f;
-  color: white;
-}
-
-footer {
-  font-size: 14px;
-  font-weight: lighter;
-  text-decoration: none;
-}
-
-footer ul li {
-  list-style: none;
-}
-
-/* .why card {
-      box-sizing: border-box;
-    
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 24px;
-      gap: 16px;
-    
-      width: 268px;
-      height: 196px;
-    
-      border: 1px solid #d0d0d0;
-      border-radius: 8px;
-    
-      flex: none;
-      order: 2;
-      flex-grow: 0;
-    } */
-
-/* Mobile */
-@media screen and (min-width: 240px) and (max-width: 768px) {
-  .Main {
-    position: relative;
-  }
-  .navbar-collapse {
-    position: fixed;
-    background-color: white;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    text-align: start;
-    z-index: 10;
-    opacity: 100%;
-  }
-  .navbar-collapse a {
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-  .navbar-collapse button {
-    border: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 20px;
-    margin-right: 20px;
-    color: black;
-  }
-  .nav-link-disable {
-    text-decoration: none;
-    color: black;
-  }
-
-  .jumbotron {
-    width: 100%;
-  }
-  .jumbotron h1 {
-    font-size: 36px;
-    text-align: center;
-  }
-
-  p {
-    font-size: 14px;
-    margin-top: 14px;
-    text-align: center;
-  }
-  a {
-    font-size: 14px;
-  }
-  h3 {
-    font-size: 24px;
-  }
-  .our img {
-    margin-left: auto;
-    margin-left: 20px;
-  }
-  .our {
-    width: 100%;
-  }
-  h2 {
-    text-align: center;
-  }
-  .card {
-    width: 100%;
-  }
-  .card img {
-    float: left;
-  }
-  .card p {
-    text-align: start;
-  }
-  .carousel {
-    width: 100%;
-  }
-  .carousel div {
-    margin-top: 20px;
-    text-align: center;
-  }
-  .carousel p {
-    font-size: 12px;
-    text-align: center;
-  }
-
-  .faq {
-    text-align: center;
-  }
-
-  .getting {
-    border-radius: 50%;
-  }
-  footer {
-    text-align: center;
-  }
-  footer img {
-    margin-top: 20px;
-    text-align: center;
-  }
-}
-
-/* tablet */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .Main {
-    position: relative;
-  }
-  .navbar-collapse {
-    position: fixed;
-    background-color: white;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    text-align: start;
-    z-index: 10;
-    opacity: 100%;
-  }
-  .navbar-collapse a {
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-  .navbar-collapse button {
-    border: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 20px;
-    margin-right: 20px;
-    color: black;
-  }
-  .nav-link-disable {
-    text-decoration: none;
-    color: black;
-  }
-  .jumbotron {
-    width: 100%;
-  }
-  .jumbotron img {
-    width: 100%;
-  }
-  .jumbotron p button {
-    size: 20px;
-  }
-  .our a {
-    font-size: 13px;
-  }
-  .our h3 {
-    text-align: center;
-  }
-  .why h2 {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 992px) {
-  .navbar-collapse button {
-    display: none;
-  }
-  .nav-link-disable {
-    display: none;
-  }
+.fs-20 {
+  font-size: 20px;
+  line-height: 30px;
 }
