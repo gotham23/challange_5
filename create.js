@@ -1,12 +1,9 @@
-const { mobil } = require('./models');
+const { Mobils } = require('./models');
 
-mobil
-  .create({
-    nama_mobil: 'avanza',
-    tipe_mobil: 'sedan',
-    harga: 27000,
-    approved: true,
-  })
-  .then((mobil) => {
-    console.log(mobil);
-  });
+Mobils.create({
+  nama: 'sedan',
+  price: 27000,
+  approved: true,
+}).then((mobils) => {
+  console.log(mobils);
+});
