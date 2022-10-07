@@ -15,8 +15,11 @@ module.exports = {
       price: {
         type: Sequelize.INTEGER
       },
-      approved: {
-        type: Sequelize.BOOLEAN
+      size: {
+        type: Sequelize.STRING
+      },
+      image: {
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,

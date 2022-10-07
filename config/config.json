@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "postgres",
-    "password": "maryam23",
+    "password": "azlan",
     "database": "db_mobil_dev",
     "host": "localhost",
     "dialect": "postgres",
@@ -9,7 +9,7 @@
   },
   "test": {
     "username": "postgres",
-    "password": "maryam23",
+    "password": "azlan",
     "database": "db_mobil_test",
     "host": "localhost",
     "dialect": "postgres",
@@ -17,7 +17,7 @@
   },
   "production": {
     "username": "postgres",
-    "password": "maryam23",
+    "password": "azlan",
     "database": "db_mobil_prod",
     "host": "localhost",
     "dialect": "postgres",
