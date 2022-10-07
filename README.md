@@ -17,4 +17,5 @@ kalau mau buat database yang sama tingal minggrate database
 Jadi Kalau mau membuat template HTML lansung ke di folder view dan tinggal edit index.ejs nya atau kalau mau buat tampilan baru tinggal masuin aja
 
 **ERD**
+
 ![ERD](https://user-images.githubusercontent.com/108776904/194443050-1834f634-69b8-49a6-9743-58d701e043d2.PNG)
