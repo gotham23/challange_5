@@ -28,6 +28,8 @@ function handleGetMobils(req, res) {
     id: mobil.id,
     nama: mobil.nama,
     price: mobil.price,
+    size: mobil.size,
+    image: mobil.image
   });
 }
 
