@@ -1,7 +1,7 @@
-const { Books } = require('./models');
+const { Mobils } = require('./models');
 
 function setBook(req, res, next) {
-  Books.findOne({
+  Mobils.findOne({
     where: { id: req.params.id },
   }).then((book) => {
     if (!book) {
@@ -12,11 +12,11 @@ function setBook(req, res, next) {
       return;
     }
 
-    req.book = book;
+    req.mobil = mobil;
     next();
   });
 }
 
 module.exports = {
-  setBook,
+  setMobil,
 };

@@ -24,6 +24,12 @@ app.use(express.json());
 //ke halaman list buku dan api get buku
 app.get('/', handler.handleListMobils);
 
+// ke halaman update buku by id
+app.get('/cars/:id/update', middleware.setMobil, handler.handlePageUpdateMobil);
+
+//api POST update buku by id
+app.post('/cars/:id/update', middleware.setMobil, handler.handleupdateMobil);
+
 app.listen(PORT, () => {
   console.log('server berjalan!');
 });
